@@ -16,7 +16,7 @@ export default function DocumentationList({ posts }: MLProps) {
             />
             <div className="flex flex-col pl-2">
               {posts.map((post) => (
-                <div className="py-1">
+                <div className="py-1" key={post.title}>
                   <Link href={`/ml/${post.slug}`}>{post.title}</Link>
                 </div>
               ))}
