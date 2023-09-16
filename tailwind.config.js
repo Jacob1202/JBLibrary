@@ -63,6 +63,10 @@ module.exports = {
           from: { opacity: "1" },
           to: { opacity: "0" },
         },
+        pulse: {
+           "0%, 100%": {opacity: "1"},
+          "50%": {opacity: ".5"}
+        }
       },
       animation: {
         move: 'move calc(var(--speed) * var(--s)) steps(var(--s)) infinite',
@@ -78,6 +82,7 @@ module.exports = {
         enterFromRight: 'enterFromRight 250ms ease',
         exitToLeft: 'exitToLeft 250ms ease',
         exitToRight: 'exitToRight 250ms ease',
+        pulse: `2s cubic-bezier(0.4, 0, 0.6, 1) infinite`
       }
     },
   },
