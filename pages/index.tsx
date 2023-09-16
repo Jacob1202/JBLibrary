@@ -2,6 +2,11 @@ import { getAllPosts } from "../lib/api";
 import Head from "next/head";
 import { CMS_NAME } from "../lib/constants";
 import HeroSection from "../components/HeroSection";
+import { motion } from "framer-motion";
+import { ChevronDownIcon } from "@radix-ui/react-icons";
+import InfoSection from "../components/InfoSection";
+import ContactSection from "../components/homepage/ContactSection";
+import AboutMeSection from "../components/homepage/AboutMeSection";
 
 export default function Index() {
   return (
@@ -11,6 +16,9 @@ export default function Index() {
       </Head>
       <main className="flex min-h-screen flex-col items-center justify-start">
         <HeroSection />
+        <InfoSection />
+        <AboutMeSection />
+        <ContactSection />
       </main>
     </>
   );

@@ -2,6 +2,7 @@ import { AppProps } from "next/app";
 import "../styles/index.css";
 import { ThemeProvider } from "../components/ThemeProvider";
 import AppHeader from "../components/AppHeader";
+import Footer from "../components/Footer";
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -10,6 +11,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <div className="container mx-auto">
           <AppHeader />
           <Component {...pageProps} />
+          <Footer />
         </div>
       </div>
     </ThemeProvider>

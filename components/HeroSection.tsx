@@ -1,8 +1,9 @@
+import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import WelcomeText from "./WelcomeText";
 
 export default function HeroSection() {
   return (
-    <div className="mt-40 flex flex-col flex-wrap items-start justify-center sm:items-center">
+    <div className="mt-40 flex flex-col flex-wrap items-center justify-center sm:items-center">
       <div className="flex w-full items-center justify-center gap-2">
         <WelcomeText />
         <h1 className="text-3xl font-semibold sm:text-6xl">I&#39;m Jacob,</h1>
@@ -15,6 +16,15 @@ export default function HeroSection() {
           I&#39;m building an app to showcase my growth as a software developer.
           Learn with me.
         </h3>
+      </div>
+      <div className="flex gap-4 sm:gap-6 mt-3">
+        <button className="bg-blue-700 text-white sm:px-6 px-5 sm:py-2 py-1 rounded-md font-semibold hover:bg-blue-800 ease-in-out transition-all duration-300">
+          <p>Learn more</p>
+        </button>
+        <button className="flex items-center justify-center gap-2 border-gray-200 border-2 sm:px-6 px-5 sm:py-2 py-1 rounded-md font-semibold transition-all hover:bg-gray-100 ease-in-out transition-all  dark:hover:bg-zinc-800">
+          <p>Resume</p>
+          <ArrowTopRightIcon />
+        </button>
       </div>
     </div>
   );
