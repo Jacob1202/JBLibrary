@@ -5,6 +5,7 @@ import PostHeader from "../../components/post-header";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
 import markdownToHtml from "../../lib/markdownToHtml";
 import type PostType from "../../interfaces/post";
+import { ReadIndicator } from "../../components/ReadIndicator";
 
 type Props = {
   post: PostType;
@@ -12,29 +13,33 @@ type Props = {
 
 export default function Post({ post }: Props) {
   const router = useRouter();
+
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
   return (
-    <div>
+    <>
+      <ReadIndicator />
       <div>
-        {router.isFallback ? (
-          <h2>Loading..</h2>
-        ) : (
-          <>
-            <article className="mb-32">
-              <PostHeader
-                title={post.title}
-                coverImage={post.coverImage}
-                date={post.date}
-                author={post.author}
-              />
-              <PostBody content={post.content} />
-            </article>
-          </>
-        )}
+        <div>
+          {router.isFallback ? (
+            <h2>Loading..</h2>
+          ) : (
+            <>
+              <article className="mb-32">
+                <PostHeader
+                  title={post.title}
+                  coverImage={post.coverImage}
+                  date={post.date}
+                  author={post.author}
+                />
+                <PostBody content={post.content} />
+              </article>
+            </>
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
