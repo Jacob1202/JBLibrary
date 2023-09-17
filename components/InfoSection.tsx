@@ -21,7 +21,7 @@ export default function InfoSection() {
         </h3> */}
         <div className="flex flex-col gap-6 w-full">
           <div className="sm:flex-row flex flex-col justify-around w-full gap-6">
-            <div className="md:w-1/3 w-full p-10 ">
+            <div className="md:w-1/3 w-full p-4 sm:p-10 ">
               <motion.div
                 initial={{ opacity: 0, transform: "translateY(10px)" }}
                 className=" min-h-[300px] "
@@ -50,7 +50,7 @@ export default function InfoSection() {
                 <ArrowRightIcon />
               </div>
             </div>
-            <div className="md:w-1/3 w-full p-10 sm:border-l-2 border-gray-200 dark:border-zinc-500 sm:border-r-2 border-t-2 border-b-2 sm:border-t-0 sm:border-b-0">
+            <div className="md:w-1/3 w-full  p-4 sm:p-10 sm:border-l-2 border-gray-200 dark:border-zinc-500 sm:border-r-2 border-t-2 border-b-2 sm:border-t-0 sm:border-b-0">
               <motion.div
                 initial={{ opacity: 0, transform: "translateY(10px)" }}
                 className="min-h-[300px] "
@@ -80,7 +80,7 @@ export default function InfoSection() {
                 <ArrowRightIcon />
               </div>
             </div>
-            <div className="md:w-1/3 w-full p-10 ">
+            <div className="md:w-1/3 w-full  p-4 sm:p-10 ">
               <motion.div
                 initial={{ opacity: 0, transform: "translateY(10px)" }}
                 className="min-h-[300px]"
