@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function AppHeader() {
   return (
-    <nav className="container flex h-20 items-center justify-between  px-4 sm:px-0">
+    <nav className="container flex h-20 items-center justify-between mx-auto px-4 sm:px-0">
       <div className="flex flex-wrap items-center gap-4">
         <Link href="/" className="text-md font-semibold">
           JBLibrary
