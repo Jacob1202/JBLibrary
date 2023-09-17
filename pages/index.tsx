@@ -5,7 +5,6 @@ import HeroSection from "../components/HeroSection";
 import { motion } from "framer-motion";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
 import InfoSection from "../components/InfoSection";
-import ContactSection from "../components/homepage/ContactSection";
 import AboutMeSection from "../components/homepage/AboutMeSection";
 
 export default function Index() {
@@ -18,7 +17,6 @@ export default function Index() {
         <HeroSection />
         <InfoSection />
         <AboutMeSection />
-        <ContactSection />
       </main>
     </>
   );
