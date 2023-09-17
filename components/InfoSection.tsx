@@ -9,15 +9,15 @@ import DesignSkeleton from "./homepage/DesignSkeleton";
 
 export default function InfoSection() {
   return (
-    <div className="mt-64 p-10 w-full flex flex-col justify-center items-start  border-b-2 border-gray-100 dark:border-zinc-800">
+    <div className="mt-64 p-10 w-full flex flex-col justify-center items-center bg-gray-100 dark:bg-zinc-800">
       <h3 className="text-2xl font-semibold leading-none sm:text-4xl mb-6">
         Featured content
       </h3>
       <div className="flex flex-col gap-6 w-full">
-        <div className="sm:flex-row flex flex-col justify-between w-full">
+        <div className="sm:flex-row flex flex-col justify-around w-full gap-6">
           <motion.div
             initial={{ opacity: 0, transform: "translateY(10px)" }}
-            className="max-w-[300px]"
+            className=" border-2 border-gray-100 rounded-lg p-10 max-w-[400px] bg-white dark:bg-zinc-700"
             whileInView={{ opacity: 1, transform: "translateY(0px)" }}
             viewport={{ once: true, amount: 1 }}
           >
@@ -31,23 +31,10 @@ export default function InfoSection() {
               React with TypeScript projects.
             </p>
           </motion.div>
+
           <motion.div
             initial={{ opacity: 0, transform: "translateY(10px)" }}
-            whileInView={{ opacity: 1, transform: "translateY(0px)" }}
-            viewport={{ once: true, amount: 1 }}
-          ></motion.div>
-        </div>
-        <div className="sm:flex-row flex flex-col justify-between w-full">
-          <motion.div
-            initial={{ opacity: 0, transform: "translateY(10px)" }}
-            whileInView={{ opacity: 1, transform: "translateY(0px)" }}
-            viewport={{ once: true, amount: 1 }}
-          >
-            <ExampleChart />
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, transform: "translateY(10px)" }}
-            className="max-w-[300px]"
+            className="border-2 border-gray-100 rounded-lg p-10 max-w-[400px] bg-white dark:bg-zinc-700"
             whileInView={{ opacity: 1, transform: "translateY(0px)" }}
             viewport={{ once: true, amount: 1 }}
           >
@@ -61,11 +48,9 @@ export default function InfoSection() {
               Learning and basic math necessary for ML.
             </p>
           </motion.div>
-        </div>
-        <div className="sm:flex-row flex flex-col justify-between w-full">
           <motion.div
             initial={{ opacity: 0, transform: "translateY(10px)" }}
-            className="max-w-[300px]"
+            className="border-2 border-gray-100 rounded-lg p-10 max-w-[400px] bg-white dark:bg-zinc-700"
             whileInView={{ opacity: 1, transform: "translateY(0px)" }}
             viewport={{ once: true, amount: 1 }}
           >
@@ -77,13 +62,6 @@ export default function InfoSection() {
               Creating design systems, my portfolio and explained approach to
               designing specific websites. Example projects.
             </p>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, transform: "translateY(10px)" }}
-            whileInView={{ opacity: 1, transform: "translateY(0px)" }}
-            viewport={{ once: true, amount: 1 }}
-          >
-            <DesignSkeleton />
           </motion.div>
         </div>
       </div>
