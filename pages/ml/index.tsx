@@ -9,7 +9,7 @@ export type MLProps = {
 
 export default function PageML({ posts }: MLProps) {
   return (
-    <div className="sm:px-0 px-4 flex flex-row mt-10 gap-4">
+    <div className="sm:px-0 px-4 flex flex-row mt-10 gap-4  min-h-screen">
       <DocumentationList posts={posts} />
       <h1 className="text-2xl md:text-3xl lg:text-5xl font-semibold md:leading-none mb-4">
         Machine Learning Library

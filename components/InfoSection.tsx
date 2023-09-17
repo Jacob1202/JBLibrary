@@ -4,8 +4,6 @@ import {
   LetterCaseCapitalizeIcon,
 } from "@radix-ui/react-icons";
 import { motion } from "framer-motion";
-import ExampleChart from "./homepage/ExampleChart";
-import DesignSkeleton from "./homepage/DesignSkeleton";
 
 export default function InfoSection() {
   return (
@@ -13,11 +11,15 @@ export default function InfoSection() {
       <h3 className="text-2xl font-semibold leading-none sm:text-4xl mb-6">
         Featured content
       </h3>
+      <h3 className="text-md w-full px-4 text-gray-400 dark:text-gray-500 sm:max-w-[600px] sm:-translate-y-4 sm:px-0 sm:text-lg md:text-lg text-center">
+        This library is for the purpose of presenting my understanding of
+        various topics related to software development, data science and design
+      </h3>
       <div className="flex flex-col gap-6 w-full">
         <div className="sm:flex-row flex flex-col justify-around w-full gap-6">
           <motion.div
             initial={{ opacity: 0, transform: "translateY(10px)" }}
-            className=" border-2 border-gray-100 rounded-lg p-10 max-w-[400px] bg-white dark:bg-zinc-700"
+            className=" border-2 border-gray-100 dark:border-none rounded-lg p-10 max-w-[400px] bg-white dark:bg-zinc-700"
             whileInView={{ opacity: 1, transform: "translateY(0px)" }}
             viewport={{ once: true, amount: 1 }}
           >
@@ -34,7 +36,7 @@ export default function InfoSection() {
 
           <motion.div
             initial={{ opacity: 0, transform: "translateY(10px)" }}
-            className="border-2 border-gray-100 rounded-lg p-10 max-w-[400px] bg-white dark:bg-zinc-700"
+            className="border-2 border-gray-100 dark:border-none rounded-lg p-10 max-w-[400px] bg-white dark:bg-zinc-700"
             whileInView={{ opacity: 1, transform: "translateY(0px)" }}
             viewport={{ once: true, amount: 1 }}
           >
@@ -50,7 +52,7 @@ export default function InfoSection() {
           </motion.div>
           <motion.div
             initial={{ opacity: 0, transform: "translateY(10px)" }}
-            className="border-2 border-gray-100 rounded-lg p-10 max-w-[400px] bg-white dark:bg-zinc-700"
+            className="border-2 border-gray-100 dark:border-none rounded-lg p-10 max-w-[400px] bg-white dark:bg-zinc-700"
             whileInView={{ opacity: 1, transform: "translateY(0px)" }}
             viewport={{ once: true, amount: 1 }}
           >
