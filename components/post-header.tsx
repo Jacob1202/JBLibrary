@@ -8,10 +8,13 @@ type Props = {
   author: Author;
 };
 
-const PostHeader = ({ date, author }: Props) => {
+const PostHeader = ({ date, author, title }: Props) => {
   return (
     <>
-      <div className="hidden md:block md:mb-12">
+      <div className="cotainer mx-auto md:block md:mb-12 ">
+        <h1 className="text-3xl md:text-5xl lg:text-7xl font-semibold md:leading-none">
+          {title}
+        </h1>
         <DateFormatter dateString={date} />
       </div>
 

@@ -9,7 +9,7 @@ export type Props = {
 
 export default function PageREACT({ posts }: Props) {
   return (
-    <div className="container px-4 sm:px-0 min-h-screen">
+    <div className="container px-4 sm:px-0 min-h-screen mx-auto">
       <ListNavigation />
 
       {/* {posts.map((post) => (

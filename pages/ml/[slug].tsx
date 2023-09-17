@@ -20,7 +20,7 @@ export default function Post({ post }: Props) {
   return (
     <>
       <ReadIndicator />
-      <div>
+      <div className="container mx-auto mt-10 px-4 sm:px-0">
         <div>
           {router.isFallback ? (
             <h2>Loading..</h2>
