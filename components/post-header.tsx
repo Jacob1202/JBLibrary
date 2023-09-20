@@ -1,6 +1,5 @@
 import DateFormatter from "./DateFormatter";
 import type Author from "../interfaces/author";
-import Avatar from "./Avatar";
 
 type Props = {
   title: string;
@@ -19,7 +18,7 @@ const PostHeader = ({ date, author, title, excerpt }: Props) => {
         </h1>
         {excerpt}
         <div className="flex gap-4 items-center">
-          <Avatar picture={author.picture} name={author.name} />
+          {/* <Avatar picture={author.picture} name={author.name} /> */}
           <DateFormatter dateString={date} />
         </div>
       </div>

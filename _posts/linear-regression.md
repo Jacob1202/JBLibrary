@@ -2,7 +2,7 @@
 title: 'Regression'
 excerpt: 'Introduction to regression'
 coverImage: '/assets/blog/preview/cover.jpg'
-date: '2020-03-16T05:35:07.322Z'
+date: '2023-09-16T05:35:07.322Z'
 author:
   name: Jakub Biniek
   picture: '/assets/blog/authors/profile.png'
