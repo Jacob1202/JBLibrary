@@ -36,7 +36,6 @@ export default function Post({ post }: Props) {
                   coverImage={post.coverImage}
                   date={post.date}
                   author={post.author}
-                  excerpt={post.excerpt}
                 />
                 <PostBody content={post.content} />
               </article>
