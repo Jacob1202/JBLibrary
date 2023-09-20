@@ -1,5 +1,5 @@
 import * as ScrollArea from "@radix-ui/react-scroll-area";
-import { MLProps } from "../pages/ml";
+import { MLProps } from "../pages/data";
 import * as Separator from "@radix-ui/react-separator";
 import Link from "next/link";
 
@@ -17,7 +17,7 @@ export default function DocumentationList({ posts }: MLProps) {
             <div className="flex flex-col pl-2">
               {posts.map((post) => (
                 <div className="py-1" key={post.title}>
-                  <Link href={`/ml/${post.slug}`}>{post.title}</Link>
+                  <Link href={`/data/${post.slug}`}>{post.title}</Link>
                 </div>
               ))}
             </div>

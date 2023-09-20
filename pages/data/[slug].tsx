@@ -6,6 +6,7 @@ import { getPostBySlug, getAllPosts } from "../../lib/api";
 import markdownToHtml from "../../lib/markdownToHtml";
 import type PostType from "../../interfaces/post";
 import { ReadIndicator } from "../../components/ReadIndicator";
+import Head from "next/head";
 
 type Props = {
   post: PostType;
@@ -19,6 +20,9 @@ export default function Post({ post }: Props) {
   }
   return (
     <>
+      <Head>
+        <title>{post.title} &nbsp;| JBLibrary</title>
+      </Head>
       <ReadIndicator />
       <div className="container mx-auto mt-10 px-4 sm:px-0">
         <div>
@@ -32,6 +36,7 @@ export default function Post({ post }: Props) {
                   coverImage={post.coverImage}
                   date={post.date}
                   author={post.author}
+                  excerpt={post.excerpt}
                 />
                 <PostBody content={post.content} />
               </article>

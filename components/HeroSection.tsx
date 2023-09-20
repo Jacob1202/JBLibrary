@@ -1,5 +1,6 @@
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import WelcomeText from "./WelcomeText";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -18,13 +19,20 @@ export default function HeroSection() {
         </h3>
       </div>
       <div className="flex gap-4 sm:gap-6 mt-3">
-        <button className="bg-blue-700 text-white sm:px-6 px-5 sm:py-2 py-1 rounded-md font-semibold hover:bg-blue-800 ease-in-out transition-all duration-300">
+        <Link
+          href="/data"
+          className="bg-blue-700 text-white sm:px-6 px-5 sm:py-2 py-1 rounded-md font-semibold hover:bg-blue-800 ease-in-out transition-all duration-300"
+        >
           <p>Learn more</p>
-        </button>
-        <button className="flex items-center justify-center gap-2 border-gray-200 border-2 sm:px-6 px-5 sm:py-2 py-1 rounded-md font-semibold transition-all hover:bg-gray-100 ease-in-out transition-all  dark:hover:bg-zinc-800">
+        </Link>
+        <Link
+          target="_blank"
+          href="https://flowcv.com/resume/dms5ht4oev"
+          className="flex items-center justify-center gap-2 border-gray-200 border-2 sm:px-6 px-5 sm:py-2 py-1 rounded-md font-semibold transition-all hover:bg-gray-100 ease-in-out transition-all  dark:hover:bg-zinc-800"
+        >
           <p>Resume</p>
           <ArrowTopRightIcon />
-        </button>
+        </Link>
       </div>
     </div>
   );
