@@ -2,6 +2,10 @@
   @apply text-lg leading-relaxed;
 }
 
+.markdown img{
+  @apply sm:px-8
+}
+
 .markdown p,
 .markdown ul,
 .markdown ol,
@@ -11,10 +15,26 @@
   @apply text-justify
 }
 
+.markdown blockquote{
+  @apply py-1;
+  @apply border-l-8 border-gray-500;
+  @apply px-6
+}
+
+.markdown ul,
+.markdown ol{
+  @apply px-4;
+  @apply list-disc border-0;  
+}
+
 .markdown h2 {
-  @apply text-3xl mt-12 mb-4 leading-snug;
+  @apply text-3xl mt-12 mb-4 leading-relaxed border-b-2
 }
 
 .markdown h3 {
-  @apply text-2xl mt-8 mb-4 leading-snug;
+  @apply text-2xl mt-8 mb-4 leading-relaxed;
+}
+
+.markdown code {
+  @apply text-[10px]
 }

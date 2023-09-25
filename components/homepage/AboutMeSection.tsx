@@ -35,7 +35,7 @@ export default function AboutMeSection() {
         </div>
 
         <Link
-          href={"/ml"}
+          href={"/data"}
           className="text-md sm:text-lg my-4 border-b-2 border-blue-700"
         >
           Learn with me.

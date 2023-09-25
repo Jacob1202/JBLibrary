@@ -72,7 +72,7 @@ export default function InfoSection() {
               </motion.div>
               <div className="flex flex-row gap-2 items-center hover:gap-3 transition-all duration-200 ease-in">
                 <Link
-                  href={"/ml"}
+                  href={"/data"}
                   className="border-b-2 border-black dark:border-white "
                 >
                   Find out more

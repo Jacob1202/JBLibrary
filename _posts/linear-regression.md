@@ -1,5 +1,5 @@
 ---
-title: 'Regression'
+title: 'Linear regression'
 excerpt: 'Introduction to regression'
 coverImage: '/assets/blog/preview/cover.jpg'
 date: '2023-09-16T05:35:07.322Z'
@@ -10,10 +10,45 @@ ogImage:
   url: '/assets/blog/preview/cover.jpg'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+## Introduction to Linear regression
 
-Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+Linear regression is an linear approach to describing a relationship between a dependent and independent variables. I'll get to the meaning of dependence and independence a bit later. 
+The simplest one equation model would be a linear model with one dependent variable X. In the mentioned model if we call y`i` as the i-th observation of our dependent variable Y and x`i` as the i-th observation of the independent variable X then our linear model would look like this
 
-## Lorem Ipsum
+![Yi = B0 + B1*X1 + eps](/assets/blog/images/linearregression1.png "Linear model")
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+Where accordingly *Beta0* and *Beta1* are unknown structural parameters of the model. However *Epsilon* is used to describe the error variable that is included in the model in order to describe a randomness of some events and add "noise". 
+Normally we can classify regression models based on
+
+   > -   number of equations in a model
+   > -   number of dependent variables 
+   > -   analytical shape
+   > -   the role of time in a model
+
+In the above mentioned model the structural parameters are not known and can be modeled based on a sample of n-elements (x`i`, y`i`), *i=1,2,3,...n*. Estimators of these structural parameters are functions of observations of dependent and independent variables. However in most cases, in regression models we use certain values given by symbols 
+*b1* and *b2*. Values of the dependent variable calculated from the model are called theoretical values of the dependent variable and can be denoted as y`i` with a ^ symbol above. Theoretical values can be calcuted as such 
+
+![^yi = b0 + b1*X1 + eps](/assets/blog/images/linearregression2.png "Estimated model")
+
+The difference between the empirical value and the theoretical is called a *residual* and can be calculated from an equation
+
+![ei = yi - ^yi, i=1,2,..n](/assets/blog/images/linearregression3.png "Residual")
+
+## The Least Squares Method
+
+The most commonly used method for estimating structural parametrs of the equation is the method of least squares.
+The main idea behind the method is to find such estimates *b1*, *b2* of structural parameters *Beta1* and *Beta2* that the sum of squares of residual values is minimal.
+In other words we want to minimaze the difference between our empirical dependent variable y`i` and variable ^y`i` calculated from our model. It can be written as such
+
+![Sum(yi - b0 - b1x1) -> min](/assets/blog/images/linearregression4.png "Least squares")
+
+With given values of y`i` and x`i`, the sum of squares of residuals is a function of *b0* and *b1*. A necessary condition for the function *S(b0, b1)* is that the first pratial derivative due to *b0* and *b1* is equal to 0.
+
+![Normal equations](/assets/blog/images/linearregression5.png "Least squares")
+
+The above transformation lead to a system of equations called normal equations, whose solution is the Ordinary Least Squares estimator of the regression coefficient *b0*.
+After certain transformations we get the equations for the estimates *b0* and *b1* that are as follows
+
+![Normal equations](/assets/blog/images/linearregression6.png "Least squares")
+
+In the estimated model, estimate *b1* informs us by what amount the mean value of the dependent variable increases (given thah *b1* is > 0) or decreases (when *b1* < 0). Given that explanation the estimate *b1* is a derivative of a linear function *f(x) = b`0`+b`1`x* due to x. 
