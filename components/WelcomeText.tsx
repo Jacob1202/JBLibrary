@@ -45,7 +45,7 @@ export default function WelcomeText() {
           </ul>
         </div>
 
-        <h1 className="text-3xl sm:text-6xl  sm:-translate-y-6 z-2">
+        <h1 className="text-3xl sm:text-6xl  sm:-translate-y-6 -translate-y-1 z-2">
           This is a documentation <br /> of my knowledge
         </h1>
         <div className="flex flex-row justify-between text-lg">
