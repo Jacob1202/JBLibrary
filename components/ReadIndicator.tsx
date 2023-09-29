@@ -11,7 +11,7 @@ export const ReadIndicator = () => {
   return (
     <motion.div
       style={{ scaleX }}
-      className="fixed top-0 left-0 right-0 h-[8px] bg-blue-700 origin-[0%]"
+      className="fixed top-0 left-0 right-0 h-[4px] bg-gray-700 origin-[0%]"
     >
       <motion.path
         d="M 0, 20 a 20, 20 0 1,0 40,0 a 20, 20 0 1,0 -40,0"

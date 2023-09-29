@@ -17,7 +17,7 @@
 
 .markdown blockquote{
   @apply py-1;
-  @apply border-l-8 border-gray-500;
+  @apply border-l border-gray-500;
   @apply px-6
 }
 
@@ -28,13 +28,11 @@
 }
 
 .markdown h2 {
-  @apply text-3xl mt-12 mb-4 leading-relaxed border-b-2
+  @apply text-3xl mt-12 mb-4 leading-relaxed border-b text-gray-500
 }
 
 .markdown h3 {
-  @apply text-2xl mt-8 mb-4 leading-relaxed;
+  @apply text-2xl mt-8 mb-4 leading-relaxed text-gray-500
 }
 
-.markdown code {
-  @apply text-[10px]
-}
+

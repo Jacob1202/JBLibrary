@@ -22,6 +22,7 @@ export default function DocumentationList({ posts }: MLProps) {
               ))}
             </div>
           </div>
+          {/* <h2 className="font-semibold mb-4">Machine Learning</h2> */}
         </div>
       </ScrollArea.Viewport>
     </ScrollArea.Root>

@@ -10,14 +10,14 @@ export type MLProps = {
 
 export default function PageML({ posts }: MLProps) {
   return (
-    <div className="sm:px-0 px-4 flex sm:flex-row flex-col-reverse mt-10 gap-4  min-h-screen container mx-auto items-start justify-end sm:justify-start">
+    <div className="sm:px-0 px-4 flex sm:flex-row flex-col-reverse mt-10 gap-4  min-h-screen items-start justify-end sm:justify-start">
       <Head>
         <title>Data Science | JBLibrary</title>
       </Head>
       <DocumentationList posts={posts} />
-      {/* <h1 className="text-2xl md:text-3xl lg:text-5xl font-semibold md:leading-none mb-4"></h1> */}
+
       <div>
-        <h1 className="text-2xl md:text-3xl lg:text-5xl font-semibold md:leading-none my-4">
+        <h1 className="text-2xl md:text-3xl lg:text-5xl  md:leading-none my-4">
           Data Science Library
         </h1>
         <p className="max-w-[700px] mt-6 text-justify sm:text-lg text-md text-gray-500">
@@ -37,7 +37,7 @@ export default function PageML({ posts }: MLProps) {
           better explain something, please reach out to me &nbsp;
           <Link
             href={"https://www.linkedin.com/in/jakub-biniek-464735243/"}
-            className="inline-block border-b-2 border-black dark:border-zinc-600"
+            className="inline-block border-b border-black dark:border-zinc-600"
             target="_blank"
           >
             here.
@@ -45,7 +45,7 @@ export default function PageML({ posts }: MLProps) {
         </div>
         <Link
           href={`data/${posts[0].slug}`}
-          className="inline-block border-b-2 border-black dark:border-zinc-600 mt-10 sm:text-lg text-md"
+          className="inline-block border-b border-black dark:border-zinc-600 mt-10 sm:text-lg text-md"
         >
           Start learning
         </Link>{" "}
