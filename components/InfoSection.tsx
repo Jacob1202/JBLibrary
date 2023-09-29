@@ -23,11 +23,12 @@ export default function InfoSection() {
             <li>
               <Link href="/dotnet">Software development</Link>
             </li>
-            <li>
-              <Link href="/data">Data science</Link>
-            </li>
+
             <li>
               <Link href="/design">Design</Link>
+            </li>
+            <li>
+              <Link href="/data">Data science</Link>
             </li>
           </ul>
         </div>
