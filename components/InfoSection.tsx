@@ -8,7 +8,7 @@ export default function InfoSection() {
           {"[About me]"}
         </div>
         <div className="w-fit sm:w-[400px] md:w-[600px] lg:w-[800px]">
-          <p className="text-justify text-lg">
+          <p className="text-justify sm:text-lg">
             I&#39;m currently a software developer with a degree in Computer
             Science and Econometrics from Warsaw University of Life Sciences. I
             have a passion for learning, and I am deeply interested in topics
@@ -21,7 +21,7 @@ export default function InfoSection() {
       <div className="flex flex-row gap-1 sm:gap-4">
         <div className="w-[100px] text-sm">{"[Work]"}</div>
         <div className=" w-full sm:w-[400px] md:w-[600px] lg:w-[800px]">
-          <ul>
+          <ul className=" sm:text-lg">
             <li>
               <Link href="/dotnet">Software development</Link>
             </li>

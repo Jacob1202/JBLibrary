@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function HeaderMenu() {
   return (
-    <div className="absolute top-20 z-10 items-center sm:relative sm:top-0 md:translate-y-0 ">
-      <NavigationMenu.Root className="relative z-[1] flex w-[300px] justify-start">
+    <div className="z-10 items-center relative ">
+      <NavigationMenu.Root className="relative z-[1] flex w-[270px] justify-start">
         <NavigationMenu.List className="flex list-none items-center justify-between ">
           <NavigationMenu.Item>
             <NavigationMenu.Trigger className="text-md group flex select-none items-center justify-between gap-1 rounded-md  py-2 font-medium leading-none  outline-none">
@@ -17,7 +17,7 @@ export default function HeaderMenu() {
               />
             </NavigationMenu.Trigger>
             <NavigationMenu.Content className="absolute left-0 top-0 z-10 w-full bg-white shadow-2xl data-[motion=from-end]:animate-enterFromRight data-[motion=from-start]:animate-enterFromLeft data-[motion=to-end]:animate-exitToRight data-[motion=to-start]:animate-exitToLeft dark:bg-zinc-800 sm:w-[300px]">
-              <ul className="m-0 grid w-[300px] list-none px-3 py-2">
+              <ul className="m-0 grid w-[270px] list-none px-3 py-2">
                 <li className=".3s rounded-md px-3 py-1 transition-all ease-in-out hover:bg-gray-100 dark:hover:bg-zinc-700">
                   <Link href="/data">
                     <h5 className="text-md font-semibold text-black dark:text-white ">
@@ -60,8 +60,8 @@ export default function HeaderMenu() {
                 aria-hidden
               />
             </NavigationMenu.Trigger>
-            <NavigationMenu.Content className="absolute left-0 top-0 z-10 w-[300px] data-[motion=from-end]:animate-enterFromRight data-[motion=from-start]:animate-enterFromLeft data-[motion=to-end]:animate-exitToRight data-[motion=to-start]:animate-exitToLeft dark:bg-zinc-800">
-              <ul className="m-0 grid w-[300px] list-none px-3 py-2">
+            <NavigationMenu.Content className="absolute left-0 top-0 z-10 w-[280px] data-[motion=from-end]:animate-enterFromRight data-[motion=from-start]:animate-enterFromLeft data-[motion=to-end]:animate-exitToRight data-[motion=to-start]:animate-exitToLeft dark:bg-zinc-800">
+              <ul className="m-0 grid w-[270px] list-none px-3 py-2">
                 <li className=".3s mb-1 rounded-md px-2  py-1 transition-all ease-in-out hover:bg-gray-100 dark:hover:bg-zinc-700">
                   <Link href="/design">
                     <h5 className="text-md mt-1 font-semibold text-black dark:text-white">
