@@ -3,11 +3,11 @@ import Link from "next/link";
 export default function InfoSection() {
   return (
     <div className="flex flex-col items-start sm:items-end gap-10">
-      <div className="flex flex-row gap-4">
+      <div className="flex flex-row sm:gap-4">
         <div className="w-[100px]  text-sm whitespace-nowrap">
           {"[About me]"}
         </div>
-        <div className="w-full sm:w-[400px] md:w-[600px] lg:w-[800px]">
+        <div className="w-fit sm:w-[400px] md:w-[600px] lg:w-[800px]">
           <p className="text-justify text-lg">
             I&#39;m currently a software developer with a degree in Computer
             Science and Econometrics from Warsaw University of Life Sciences. I
@@ -18,9 +18,9 @@ export default function InfoSection() {
           </p>
         </div>
       </div>
-      <div className="flex flex-row sm:gap-4">
+      <div className="flex flex-row gap-1 sm:gap-4">
         <div className="w-[100px] text-sm">{"[Work]"}</div>
-        <div className=" sm:w-[400px] md:w-[600px] lg:w-[800px]">
+        <div className=" w-full sm:w-[400px] md:w-[600px] lg:w-[800px]">
           <ul>
             <li>
               <Link href="/dotnet">Software development</Link>

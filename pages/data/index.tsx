@@ -10,7 +10,7 @@ export type MLProps = {
 
 export default function PageML({ posts }: MLProps) {
   return (
-    <div className="sm:px-0 px-4 flex sm:flex-row flex-col-reverse mt-10 gap-4  min-h-screen items-start justify-end sm:justify-start">
+    <div className=" flex sm:flex-row flex-col-reverse mt-10 gap-4  min-h-screen items-start justify-end sm:justify-start">
       <Head>
         <title>Data Science | JBLibrary</title>
       </Head>

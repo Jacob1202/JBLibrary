@@ -12,6 +12,7 @@ export default function Index() {
       <main className="flex min-h-screen flex-col">
         <HeroSection />
         <InfoSection />
+        <img className="w-full sm:w-1/3 my-12" src="/assets/homepage.jpg" />
       </main>
     </>
   );
