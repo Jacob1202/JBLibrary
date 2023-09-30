@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function HeaderMenu() {
   return (
-    <div className="absolute top-20 z-10 items-center sm:relative sm:top-0 md:translate-y-0 hidden sm:block">
+    <div className="absolute top-20 z-10 items-center sm:relative sm:top-0 md:translate-y-0 ">
       <NavigationMenu.Root className="relative z-[1] flex w-[300px] justify-start">
         <NavigationMenu.List className="flex list-none items-center justify-between ">
           <NavigationMenu.Item>

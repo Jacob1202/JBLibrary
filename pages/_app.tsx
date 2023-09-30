@@ -4,6 +4,7 @@ import { ThemeProvider } from "../components/ThemeProvider";
 import AppHeader from "../components/AppHeader";
 
 import { Manrope } from "next/font/google";
+import AppHeaderMobile from "../components/AppHeaderMobile";
 
 const manrope = Manrope({ subsets: ["latin"] });
 
@@ -13,6 +14,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <div className={manrope.className}>
         <div className="2s flex min-h-screen flex-col bg-white transition-all ease-in-out dark:bg-zinc-900  px-6 sm:px-12">
           <AppHeader />
+          <AppHeaderMobile />
           <Component {...pageProps} />
         </div>
       </div>

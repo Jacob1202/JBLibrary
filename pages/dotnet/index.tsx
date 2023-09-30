@@ -9,7 +9,7 @@ export type Props = {
 
 export default function PageDOTNET({ posts }: Props) {
   return (
-    <div className="container px-4 sm:px-0 min-h-screen mx-auto">
+    <div className="container  min-h-screen mx-auto">
       <ListNavigation />
 
       {/* {posts.map((post) => (
