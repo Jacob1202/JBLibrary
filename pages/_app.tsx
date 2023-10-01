@@ -12,7 +12,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class">
       <div className={manrope.className}>
-        <div className="2s flex min-h-screen flex-col bg-white transition-all ease-in-out dark:bg-zinc-900  px-6 sm:px-12">
+        <div className="delay-200 duration-500 flex min-h-screen flex-col bg-white transition-all ease-in-out dark:bg-zinc-900  px-6 sm:px-12">
           <AppHeader />
           <AppHeaderMobile />
           <Component {...pageProps} />
