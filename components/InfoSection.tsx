@@ -4,9 +4,7 @@ export default function InfoSection() {
   return (
     <div className="flex flex-col items-start sm:items-end gap-10">
       <div className="flex flex-row sm:gap-4">
-        <div className="w-[100px]  text-sm whitespace-nowrap">
-          {"[About me]"}
-        </div>
+        <div className="w-[100px]  text-sm whitespace-nowrap">{"[About]"}</div>
         <div className="w-fit sm:w-[400px] md:w-[600px] lg:w-[800px]">
           <p className="text-justify sm:text-lg">
             I&#39;m currently a software developer with a degree in Computer

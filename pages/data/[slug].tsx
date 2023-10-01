@@ -24,7 +24,7 @@ export default function Post({ post }: Props) {
         <title>{post.title} &nbsp;| JBLibrary</title>
       </Head>
       <ReadIndicator />
-      <div className="mt-12">
+      <div className=" mt-[5rem] sm:mt-10 ">
         <div>
           {router.isFallback ? (
             <h2>Loading..</h2>

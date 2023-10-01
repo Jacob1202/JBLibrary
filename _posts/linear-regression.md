@@ -15,7 +15,7 @@ The simplest one equation model would be a linear model with one dependent varia
 
 ![Yi = B0 + B1*X1 + eps](/assets/blog/images/linearregression1.png "Linear model")
 
-Where accordingly *Beta0* and *Beta1* are unknown structural parameters of the model. However *Epsilon* is used to describe the error variable that is included in the model in order to describe a randomness of some events and add "noise". 
+Where accordingly *Beta0* and *Beta1* are unknown structural parameters of the model. *Epsilon* however is used to describe the error variable that is included in the model in order to describe a randomness of some events and add "noise". 
 Normally we can classify regression models based on
 
    - number of equations in a model

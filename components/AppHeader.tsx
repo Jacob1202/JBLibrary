@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function AppHeader() {
   return (
-    <nav className="h-20 items-center justify-between  flex">
+    <nav className="h-20 items-center justify-between  sm:flex hidden">
       <div className="flex flex-row items-center gap-4">
         <Link href="/" className="text-md font-semibold flex gap-4">
           <Logo />
