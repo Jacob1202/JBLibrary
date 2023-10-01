@@ -21,8 +21,8 @@ export default function AppHeaderMobile() {
         <div className="flex items-center">
           <ThemeSwitch />
           <div
-            className={`relative inline-block  h-20 w-20 cursor-pointer rotate-0 transition-all duration-300 ease-out ${
-              menuOpen ? "rotate-90" : ""
+            className={`relative inline-block  h-20 w-20 cursor-pointer transition-all duration-200 ease-out ${
+              menuOpen ? "rotate-90" : " rotate-0 delay-500"
             } `}
           >
             <div
@@ -34,13 +34,13 @@ export default function AppHeaderMobile() {
               onClick={() => setMenuOpen(!menuOpen)}
             >
               <div
-                className={`w-full h-[1px] block relative bg-black dark:bg-white transition-all duration-500 ease-out translate-y-0 rotate-0 ${
-                  menuOpen ? "translate-y-2 rotate-45 delay-500" : ""
+                className={`w-full h-[1px] block relative bg-black dark:bg-white transition-all duration-500 ease-out translate-y-0  ${
+                  menuOpen ? "translate-y-2 rotate-45 delay-500" : " rotate-0"
                 } `}
               ></div>
               <div
-                className={`w-full h-[1px] block relative bg-black dark:bg-white transition-all duration-500 ease-out  translate-y-2 rotate-0 ${
-                  menuOpen ? "translate-y-2 -rotate-45 delay-500" : ""
+                className={`w-full h-[1px] block relative bg-black dark:bg-white transition-all duration-500 ease-out  translate-y-2  ${
+                  menuOpen ? "translate-y-2 -rotate-45 delay-500" : "rotate-0"
                 }`}
               ></div>
             </div>
