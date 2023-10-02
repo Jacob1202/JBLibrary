@@ -50,3 +50,5 @@ After certain transformations we get the equations for the estimates *b0* and *b
 ![Normal equations](/assets/blog/images/linearregression6.png "Least squares")
 
 In the estimated model, estimate *b1* informs us by what amount the mean value of the dependent variable increases (given that *b1* is > 0) or decreases (when *b1* < 0). Given that explanation the estimate *b1* is a derivative of a linear function *f(x) = b<sub>0</sub>+b<sub>1</sub>x* due to x. 
+
+Other materials regarding linear regression with my recomendation are [here](https://www.youtube.com/watch?v=P8hT5nDai6A&t=780s&ab_channel=TheOrganicChemistryTutor) or overall on the Internet. 

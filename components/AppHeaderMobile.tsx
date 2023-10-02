@@ -8,7 +8,7 @@ export default function AppHeaderMobile() {
 
   return (
     <div
-      className={`sm:hidden w-full block absolute top-0 left-0 z-10 bg-white dark:bg-zinc-900 overflow-hidden transition-all ease-in-out  delay-200 ${
+      className={`sm:hidden w-full block fixed top-0 left-0 z-10 bg-white dark:bg-zinc-900 overflow-hidden transition-all ease-in-out  delay-200 ${
         menuOpen
           ? "h-full bg-white transition-all duration-500 delay-200 z-10"
           : "h-20 duration-500 "
