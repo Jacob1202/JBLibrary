@@ -29,8 +29,8 @@ With our vector R0 and matrix R ready the next step is to calculate the critical
 
 where value t is a value read from statistical tables for the Student's t-distribution with n-2 degrees of freedom and alfa statiscial significance. The first step in the analysis is to compare the absolute value of vector R0 with the critical value and discarding those variables which do not exceed the critical value and therefore are losely correlated with the dependent variable Y. In the next step we compare how strongly our just added variable is correlated with other independet variables and if any values exceed the critical value, we discard them from the group of variables that could be included in the model. After eliminating the variables we check which one is the most correlated with the Y variable and we add that variable to the model. After adding the variable we once again compare coefficients repeating the last step for as long as there are variables in the set of potential variables to be added to the model.
 
-## A graphical method
+## The graphs method
 
+A graphical solution to the problem of picking the right variables is the graphs method which relies on constructing a matrix of correlation coefficients R, the same way it was constructed in the previous method and picking the correct variables based on a graphical interpretation. We calculate the critical value of r*, in the same way it was mentioned previously and compare it to every absolute value of any element in our matrix R. If any values turn out to be lesser than the critical value we substitute that value for a 0. In the next step we create a graph by connecting points corresponding to the independent variables where values are different from 0 in the modified R matrix. A graph created in such a way many times has a couple of sub-graphs or lone points. The variables that enter our model are going to be the ones with the most connections in out graph. In a case where variables have the same amount of connections we pick the one with the highest correlation to the dependent variable Y to enter our model.
 
-## Hellwigs method
-Selection of variables
+Other methods worthy of mention are forward stepwise regression, backwards stepwise regression or Hellwig's method.
